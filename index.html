@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saliou Sene – Développeur Frontend</title>
+
+  <!-- Police Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Manrope", sans-serif;
+      background: linear-gradient(135deg, #0f1226, #1b1e40);
+      color: #E7E8EE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .hero {
+      max-width: 700px;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      letter-spacing: 1px; /* ✅ Amélioration manuelle */
+    }
+
+    p {
+      font-size: 20px;
+      color: #B6BCD1;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #7C5CFF, #36D1DC);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #36D1DC, #7C5CFF);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Saliou Sene</h1>
+    <p>Développeur frontend passionné par l’accessibilité, la performance et la création d’interfaces modernes. 
+       Mon objectif : construire des expériences web rapides, utiles et élégantes.</p>
+    <a href="#" class="btn" id="projectsBtn">Afficher mes projets</a>
+
+    <footer>
+      © <span id="year"></span> Saliou Sene — Thiés, Sénégal
+    </footer>
+  </div>
+
+  <script>
+    // Ajout automatique de l’année actuelle
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Interaction bouton
+    document.getElementById("projectsBtn").addEventListener("click", function(e) {
+      e.preventDefault();
+      // Redirection vers un lien GitHub ou portfolio
+      window.location.href = "https://github.com/votre-profil"; // Remplacez par votre lien
+    });
+</script>
+</body>
+</html>
